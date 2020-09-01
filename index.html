@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title> Survey Form </title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title"> Bed-and-Breakfast Survey Form </h1>
+          <p id="description"> We appreciate your feedback and are always looking to make improvements </p>
+        </header>
+      <div class="form">
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"     required>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+              <p> How did you hear about us? </p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="airbnb">Airbnb</option>
+                <option value="facebook">Facebook</option>
+                <option value="friend/word-of-mouth">From a friend/word of mouth</option>
+                <option value="returning-customer">Stayed here before</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+              <div class="form-group">
+                <p> Would you stay with us again? </p>
+                <label>
+                  <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+                </label>
+                <label>
+                  <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                </label>
+                <label>
+                  <input name="user-recommend" value="maybe" type="radio" class="input-radio">Not sure
+                </label>
+              </div>
+          <div class="form-group">
+            <p> What amenities did you most enjoy? </p>
+            <label>
+              <input name="prefer" value="sauna" type="checkbox" class="input-checkbox">Sauna      
+            </label>
+            <label>
+              <input name="prefer" value="pool" type="checkbox" class="input-checkbox">Pool      
+            </label>
+            <label>
+              <input name="prefer" value="pancakeBar" type="checkbox" class="input-checkbox">Pancake Bar     
+            </label>
+            <label>
+              <input name="prefer" value="massageParlor" type="checkbox" class="input-checkbox">Massage Parlor     
+            </label>
+            <label>
+            <input name="prefer" value="putting-green" type="checkbox" class="input-checkbox">Putting Green   
+            </label>
+            <label>
+            <input name="prefer" value="flower-garden-path" type="checkbox" class="input-checkbox">Flower garden/flower path  
+            </label>
+            <label>
+      <input name="prefer" value="reading-lounge" type="checkbox" class="input-checkbox">Reading Lounge  
+            </label>
+            <label>
+      <input name="prefer" value="game-room" type="checkbox" class="input-checkbox">Game Room 
+            </label>
+         </div>
+         <div class="form-group">
+           <p>Enter any additional comments here:</p>
+            <textarea cols="40" id="comments" class="input-textarea" name="comment" placeholder="Comments"></textarea>
+         </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+                    
+          </div>
+        </form>
+      </div>
+      </body>
+    </div>
+  
+</html>
